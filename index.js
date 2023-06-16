@@ -6,6 +6,7 @@ require([
     "esri/layers/TileLayer",
     "esri/layers/SceneLayer",
     "esri/views/SceneView",
+    "esri/widgets/Home",
     "esri/widgets/Slider"
 ], (
     Map,
@@ -15,6 +16,7 @@ require([
     TileLayer,
     SceneLayer,
     SceneView,
+    Home,
     Slider
 ) => {
     // Get data layers
@@ -69,6 +71,13 @@ require([
             atmosphereEnabled: false
         }
     });
+
+    const homeBtn = new Home({
+        view: view
+    });
+
+    // Add the home button to the top left corner of the view
+    view.ui.add(homeBtn, "top-right");
 
     // Create sea level slider and add to map
     const slider = new Slider({

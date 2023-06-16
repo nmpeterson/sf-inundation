@@ -1,19 +1,26 @@
 html,
 body,
-#viewDiv {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
+.container-fluid {
+  font-family: var(--calcite-sans-family);
+  width: 100%;
+  height: 100%;
 }
 
-.slider {
-    width: 100%;
-    height: 100%;
+#header {
+  background-color: #0f5055;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: var(--calcite-font-size-4);
 }
 
 #infoDiv {
-    padding: 10px;
-    width: 100px;
-    height: 250px;
+  width: 110px;
+  height: 300px;
+  margin-bottom: 50px;
+}
+
+.label {
+  padding: 10px;
 }
